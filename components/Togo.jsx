@@ -13,9 +13,9 @@ const Togo = () => {
       </div>
       <div className="flex flex-col justify-center w-6/12 items-center ">
       <Image
-            className="absolute "
+            className="absolute translate-x-[-28rem] translate-y-[-4rem]"
             src="/img/patron-color.png"
-            width={100}
+            width={120}
             height={20}
           ></Image>
         <h2 className="text-[#525252] text-[11.5rem] font-[CreatoDisplay-BlackItalic]">

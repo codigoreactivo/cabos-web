@@ -35,7 +35,7 @@ export default function Home() {
         </section>
         <section
           id="cantina"
-          className="text-white h-screen bg-black bg-no-repeat bg-cover  text-center flex"
+          className="text-white h-screen bg-black bg-no-repeat bg-cover  text-center flex w-full"
           style={{
             backgroundImage: "url('img/cantina.jpg')",
           }}

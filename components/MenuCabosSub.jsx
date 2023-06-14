@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 const MenuCabosSub = () => {
   return (
     <div>
@@ -18,7 +18,9 @@ const MenuCabosSub = () => {
             harmonious blend of spices, traditional recipes, and passion
           </p>
         </div>
+        <Image className="absolute right-0" src="/img/patron-color.png" width={100} height={20}></Image>
       </div>
+      
     </div>
   );
 };
