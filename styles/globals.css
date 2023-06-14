@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'MilestoneFreeVersion-Script';
+  src: url('/fonts/MilestoneFreeVersion-Script.otf') format('opentype');
+}
+@font-face {
+  font-family: 'CreatoDisplay-Thin';
+  src: url('/fonts/CreatoDisplay-Thin.otf') format('opentype');
+}
+@font-face {
+  font-family: 'CreatoDisplay-ThinItalic';
+  src: url('/fonts/CreatoDisplay-ThinItalic.otf') format('opentype');
+}
+@font-face {
+  font-family: 'CreatoDisplay-Medium';
+  src: url('/fonts/CreatoDisplay-Medium.otf') format('opentype');
+}
+@font-face {
+  font-family: 'CreatoDisplay-ExtraBold';
+  src: url('/fonts/CreatoDisplay-ExtraBold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'CreatoDisplay-Bold';
+  src: url('/fonts/CreatoDisplay-Bold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'CreatoDisplay-ExtraBoldItalic';
+  src: url('/fonts/CreatoDisplay-ExtraBoldItalic.otf') format('opentype');
+}
+@font-face {
+  font-family: 'CreatoDisplay-Black';
+  src: url('/fonts/CreatoDisplay-Black.otf') format('opentype');
+}
+@font-face {
+  font-family: 'CreatoDisplay-BlackItalic';
+  src: url('/fonts/CreatoDisplay-BlackItalic.otf') format('opentype');
+}
+*{
+  scroll-behavior: smooth !important;
+}
+.snapwidget-widget{
+  aspect-ratio: 16/9;
+  padding: 6rem;
+  overflow: hidden;
+  margin-top: -22rem;
+
+}
+
+.media-grid .clearfix{
+  gap: 2rem;
+  margin: 5rem;
+}
