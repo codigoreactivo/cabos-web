@@ -14,7 +14,7 @@ const Togo = () => {
       </div>
       <div className="flex flex-col justify-center w-6/12 items-center ">
       <Image
-            className="absolute top-0 right-0 z-10"
+            className="absolute "
             src="/img/patron-color.png"
             width={100}
             height={20}
