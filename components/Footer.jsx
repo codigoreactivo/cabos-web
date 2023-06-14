@@ -17,7 +17,7 @@ const Footer = () => {
         <Image src="/img/logo-white.png" width={280} height={50}></Image>
         <div className="flex flex-row justify-center gap-8 py-7">
           <Link href='https://www.instagram.com/loscabosfamilymexican/' target="blank"><Image src="/img/ig.png" width={20} height={20}></Image></Link>
-          <Link href='https://www.facebook.com/loscabosND'><Image src="/img/fb.png" width={20} height={20}></Image></Link>
+          <Link href='https://www.facebook.com/loscabosND' target="blank"><Image src="/img/fb.png" width={20} height={20}></Image></Link>
         </div>
       </div>
       <div className="flex flex-col text-white">
