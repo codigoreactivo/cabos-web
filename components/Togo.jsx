@@ -1,6 +1,5 @@
-import React from "react";
 import Image from "next/image";
-
+import React from "react";
 const Togo = () => {
   return (
     <div className="flex flex-row h-screen w-full z-10">

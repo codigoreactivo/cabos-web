@@ -11,7 +11,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-export default () => {
+export default function MySwiperComponent()  {
   return (
     <Swiper
       // install Swiper modules
@@ -47,9 +47,7 @@ export default () => {
           style={{
             backgroundImage: "url('img/slide-12.jpg')",
           }}
-        >
-          
-        </div>
+        ></div>
       </SwiperSlide>
       <SwiperSlide>
         <div
@@ -57,9 +55,7 @@ export default () => {
           style={{
             backgroundImage: "url('img/slide-13.jpg')",
           }}
-        >
-          
-        </div>
+        ></div>
       </SwiperSlide>
       <SwiperSlide>
         <div
@@ -67,9 +63,7 @@ export default () => {
           style={{
             backgroundImage: "url('img/slide-14.jpg')",
           }}
-        >
-
-        </div>
+        ></div>
       </SwiperSlide>
     </Swiper>
   );
