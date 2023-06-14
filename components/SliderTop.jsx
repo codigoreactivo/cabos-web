@@ -20,7 +20,6 @@ export default () => {
       slidesPerView={1}
       navigation={true}
       pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
       onSwiper={(swiper) => console.log(swiper)}
       autoplay={{
         delay: 2500,
@@ -31,12 +30,15 @@ export default () => {
     >
       <SwiperSlide>
         <div
-          className="h-screen bg-no-repeat bg-cover"
+          className="flex flex-col justify-center items-center h-screen bg-no-repeat bg-cover "
           style={{
             backgroundImage: "url('img/slide-11.jpg')",
           }}
         >
-          <p className="text'3xl text-white"></p>
+          <p className="text-[5rem] text-white font-[CreatoDisplay-Black] mt-[14rem]">
+            Spice up your palate, <br /> Los Cabos awaits!
+          </p>
+          <Image src="/img/underline-img.png" width={200} height={30}></Image>
         </div>
       </SwiperSlide>
       <SwiperSlide>
@@ -46,7 +48,7 @@ export default () => {
             backgroundImage: "url('img/slide-12.jpg')",
           }}
         >
-          Hola
+          
         </div>
       </SwiperSlide>
       <SwiperSlide>
@@ -56,7 +58,7 @@ export default () => {
             backgroundImage: "url('img/slide-13.jpg')",
           }}
         >
-          Hola
+          
         </div>
       </SwiperSlide>
       <SwiperSlide>
@@ -66,10 +68,9 @@ export default () => {
             backgroundImage: "url('img/slide-14.jpg')",
           }}
         >
-          Hola
+
         </div>
       </SwiperSlide>
-      ...
     </Swiper>
   );
 };
