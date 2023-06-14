@@ -12,7 +12,7 @@ const MenuCabos = () => {
             height: "auto",
           }}
         >
-          <p className="text-3xl lg:text-8xl">Fresh</p>
+          <a href="#"><p className="text-3xl lg:text-8xl">Fresh</p></a>
         </div>
         <div
           className="flex-1 bg-no-repeat bg-cover flex items-center justify-center "
@@ -21,7 +21,7 @@ const MenuCabos = () => {
             height: "auto",
           }}
         >
-          <p className="text-3xl lg:text-8xl">Traditional</p>
+          <a href="#"><p className="text-3xl lg:text-8xl">Traditional</p></a>
         </div>
         <div
           className="flex-1 flex bg-no-repeat bg-cover items-center justify-center"
