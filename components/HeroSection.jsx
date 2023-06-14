@@ -25,7 +25,7 @@ const HeroSection = () => {
               <br /> cuisine!
             </span>
           </h2>
-          <p className="text-2xl text-[#525252]">
+          <p className="text-2xl text-[#525252] font-[CreatoDisplay-Light]">
             At Los Cabos Mexican Restaurant, we proudly showcase the <br /> rich
             and diverse culinary traditions of Mexico, where every dish <br />{" "}
             is crafted with passion and an irresistible blend of spices.
