@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 const Togo = () => {
   return (
-    <div className="flex flex-row h-screen w-full z-10">
+    <div className="flex flex-row h-screen w-full">
 
       <div
         className="flex flex-col justify-center w-7/12 bg-no-repeat bg-cover "
