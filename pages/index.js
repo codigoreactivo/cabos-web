@@ -51,7 +51,7 @@ export default function Home() {
         </section>
       </main>
       
-      <Footer />
+      
       <div className="bg-[#FF9138] text-[#ffffff] text-center text-base p-2 font-[CreatoDisplay-Thin]">Site by art <a href="#" className="font-[CreatoDisplay-Medium]">Creativos Asociados</a> | D'MNT</div>
     </div>
   );

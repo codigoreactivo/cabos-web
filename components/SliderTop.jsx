@@ -35,10 +35,12 @@ export default function MySwiperComponent()  {
             backgroundImage: "url('img/slide-11.jpg')",
           }}
         >
-          <p className="text-[5rem] text-white font-[CreatoDisplay-Black] mt-[14rem]">
-            Spice up your palate, <br /> Los Cabos awaits!
-          </p>
-          <Image src="/img/underline-img.png" width={200} height={30}></Image>
+<p className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-bold mt-10 sm:mt-20 md:mt-32">
+        Spice up your palate, <br /> Los Cabos awaits!
+      </p>
+      <div className="mt-4 sm:mt-8">
+        <Image src="/img/underline-img.png" width={200} height={30} />
+      </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
