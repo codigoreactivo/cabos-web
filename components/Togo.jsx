@@ -3,7 +3,7 @@ import React from "react";
 
 const Togo = () => {
   return (
-    <div className="flex flex-col md:flex-row">
+    <div className="flex flex-col md:flex-row justify-center">
       <div
         className="w-full md:w-7/12 bg-no-repeat bg-cover"
         style={{

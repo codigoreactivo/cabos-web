@@ -1,13 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
-const HeroSection = () => {
+const Welcome = () => {
   return (
-    <div
-      className="flex basis-full  h-auto items-center "
-    >
-      <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 lg:gap-40 justify-center items-start basis-11/12">
-        <div className="text-center sm:text-left justify-start items-start">
+    <div className="h-fit basis-11/12 flex flex-col md:flex-row">
+      <div className="flex basis-3/5 h-auto">
+        <div className="text-left sm:text-left justify-start items-start">
           <Image
             className="absolute -translate-x-2 -translate-y-2 sm:absolute sm:translate-x-0 sm:translate-y-0"
             src="/img/patron-color.png"
@@ -37,7 +36,11 @@ const HeroSection = () => {
           </p>
           <Image src="/img/underline-img.png" width={100} height={20} />
         </div>
-        <div className="text-center sm:text-left justify-center items-start mt-8 sm:mt-0">
+      </div>
+
+      <div className="flex basis-2/5 h-auto">
+        {" "}
+        <div className="text-left sm:text-left justify-center items-start ">
           <p className="text-2xl sm:text-4xl font-[CreatoDisplay-ExtraBold] text-[#525252] uppercase">
             Located in Dickinson,
             <br /> North Dakota
@@ -100,4 +103,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default Welcome;

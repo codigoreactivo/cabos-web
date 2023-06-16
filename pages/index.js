@@ -7,6 +7,7 @@ import MenuCabosSub from "../components/MenuCabosSub";
 import Cantina from "../components/Cantina";
 import Togo from "../components/Togo";
 import GridSection from "../components/GridSection";
+import Welcome from "../components/Welcome";
 import Image from "next/image";
 import React from "react";
 
@@ -15,8 +16,8 @@ export default function Home() {
     <div>
       <NavBar />
 
-      <main className="h-fit
-      ">
+      <main className="h-fit">
+        
         <section
           id="home"
           className="text-black h-screen bg-[#ffffff]  text-center flex justify-center items-center basis-full"
@@ -25,11 +26,12 @@ export default function Home() {
         </section>
         <section
           id="home"
-          className="text-black h-screen bg-[#ffffff]  text-center flex justify-center items-center basis-full"
+          className="text-black h-auto bg-[#ffffff]  text-center flex justify-center items-center basis-full"
         >
-          <HeroSection />
+          <Welcome />
         </section>
-        <div></div>
+
+    
         <section
           id="menu"
           className=" text-white h-auto flex flex-col basis-full"
@@ -58,14 +60,13 @@ export default function Home() {
       <footer className="h-auto">
         <Footer />
         <div className="bg-[#FF9138] text-[#ffffff] text-center text-base p-2 font-[CreatoDisplay-Thin] basis-full">
-        Site by art{" "}
-        <a href="#" className="font-[CreatoDisplay-Medium]">
-          Creativos Asociados
-        </a>{" "}
-        | D'MNT
-      </div>
+          Site by art{" "}
+          <a href="#" className="font-[CreatoDisplay-Medium]">
+            Creativos Asociados
+          </a>{" "}
+          | D'MNT
+        </div>
       </footer>
-      
     </div>
   );
 }
