@@ -3,7 +3,9 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <div className="block w-full m-0 p-0">
+    <div
+      className="flex basis-full m-0 p-0 h-auto items-center "
+    >
       <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 lg:gap-40 justify-center items-start w-11/12">
         <div className="text-center sm:text-left justify-start items-start">
           <Image

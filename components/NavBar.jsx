@@ -1,84 +1,94 @@
-import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
+import Link from 'next/link';
+import React, { useState, useEffect } from 'react';
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import Image from 'next/image';
 
-function NavBar() {
-  const [navbar, setNavbar] = useState(false);
+const Navbar = () => {
+  const [nav, setNav] = useState(false);
+  const [color, setColor] = useState('transparent');
+  const [textColor, setTextColor] = useState('white');
+
+  const handleNav = () => {
+    setNav(!nav);
+  };
+
+  useEffect(() => {
+    const changeColor = () => {
+      if (window.scrollY >= 90) {
+        setColor('#ffffff');
+        setTextColor('#000000');
+      } else {
+        setColor('transparent');
+        setTextColor('#ffffff');
+      }
+    };
+    window.addEventListener('scroll', changeColor);
+  }, []);
+
   return (
-    <div>
-      <nav className="w-full fixed top-0 left-0 right-0 z-10">
-        <div className="justify-between px-4 mx-auto  md:items-center md:flex md:px-8">
-          <div>
-            <div className="flex items-center justify-between py-3 md:py-5 md:block">
-              {/* LOGO */}
-              <Link href="/">
-                <Image
-                  src="/img/cabos-logo.png"
-                  alt="cabos"
-                  width={200}
-                  height={300}
-                ></Image>
-              </Link>
-              {/* HAMBURGER BUTTON FOR MOBILE */}
-              <div className="md:hidden ">
-                <button
-                  className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
-                  onClick={() => setNavbar(!navbar)}
-                >
-                  {navbar ? (
-                    <Image src="/close.svg" width={30} height={30} alt="logo" />
-                  ) : (
-                    <Image
-                      src="/hamburger-menu.svg"
-                      width={30}
-                      height={30}
-                      alt="logo"
-                      className="focus:border-none active:border-none"
-                    />
-                  )}
-                </button>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div
-              className={`flex-1 font-[CreatoDisplay-Medium] justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-                navbar ? "p-12 md:p-0 block" : "hidden"
-              }`}
-            >
-              <ul className="h-screen md:h-auto items-center justify-center md:flex">
-                <li className="pb-6 text-xl text-white py-2 md:px-10 text-center border-b-2 md:border-b-0">
-                  <Link href="#home" onClick={() => setNavbar(!navbar)}>
-                    Home
-                  </Link>
-                </li>
-                <li className="pb-6 text-xl text-white py-2 px-10 text-center  border-b-2 md:border-b-0  ">
-                  <Link href="#menu" onClick={() => setNavbar(!navbar)}>
-                    Menu
-                  </Link>
-                </li>
-                <li className="pb-6 text-xl text-white py-2 px-10 text-center  border-b-2 md:border-b-0  ">
-                  <Link href="#cantina" onClick={() => setNavbar(!navbar)}>
-                    Cantina
-                  </Link>
-                </li>
-                <li className="pb-6 text-xl text-white py-2 px-10 text-center  border-b-2 md:border-b-0  ">
-                  <Link href="#togo" onClick={() => setNavbar(!navbar)}>
-                    Togo
-                  </Link>
-                </li>
-                <li className="pb-6 text-xl text-white py-2 px-10 text-center  border-b-2 md:border-b-0  ">
-                  <Link href="#gallery" onClick={() => setNavbar(!navbar)}>
-                    Gallery
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
+    <div
+      style={{ backgroundColor: `${color}` }}
+      className='fixed left-0 top-0 w-full z-10 ease-in duration-300'
+    >
+      <div className='max-w-[1500px] m-auto flex justify-between items-center p-4 text-white'>
+        <Link href='/'>
+          <Image src="/img/cabos-logo.png" width={150} height={20}></Image>
+        </Link>
+        <ul style={{ color: `${textColor}` }} className='hidden text-xl font-[CreatoDisplay-Light] gap-11 sm:flex'>
+          <li className='p-4'>
+            <Link href='/'>Home</Link>
+          </li>
+          <li className='p-4'>
+            <Link href='/#menu'>Menu</Link>
+          </li>
+          <li className='p-4'>
+            <Link href='/#cantina'>Cantina</Link>
+          </li>
+          <li className='p-4'>
+            <Link href='/#togo'>Togo</Link>
+          </li>
+          <li className='p-4'>
+            <Link href='/#gallery'>Gallery</Link>
+          </li>
+        </ul>
+
+        {/* Mobile Button */}
+        <div onClick={handleNav} className='block sm:hidden z-10'>
+          {nav ? (
+            <AiOutlineClose size={30} style={{ color: `${textColor}` }} />
+          ) : (
+            <AiOutlineMenu size={30} style={{ color: `${textColor}` }} />
+          )}
         </div>
-      </nav>
+        {/* Mobile Menu */}
+        <div
+          className={
+            nav
+              ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-white text-center ease-in duration-300'
+              : 'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'
+          }
+        >
+          <ul className='font-[CreatoDisplay-Light]'>
+            <li onClick={handleNav} className='p-4 text-4xl text-black hover:text-gray-500'>
+              <Link href='/'>Home</Link>
+            </li>
+            <li onClick={handleNav} className='p-4 text-4xl text-black hover:text-gray-500'>
+              <Link href='#menu'>Menu</Link>
+            </li>
+            <li onClick={handleNav} className='p-4 text-4xl text-black hover:text-gray-500'>
+              <Link href='#cantina'>Cantina</Link>
+            </li>
+            <li onClick={handleNav} className='p-4 text-4xl text-black hover:text-gray-500'>
+              <Link href='#togo'>Togo</Link>
+            </li>
+            <li onClick={handleNav} className='p-4 text-4xl text-black hover:text-gray-500'>
+              <Link href='#gallery'>Gallery</Link>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
-}
+};
 
-export default NavBar;
+export default Navbar;

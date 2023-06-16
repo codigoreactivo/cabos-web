@@ -11,7 +11,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-export default function MySwiperComponent()  {
+export default function MySwiperComponent() {
   return (
     <Swiper
       // install Swiper modules
@@ -35,12 +35,12 @@ export default function MySwiperComponent()  {
             backgroundImage: "url('img/slide-11.jpg')",
           }}
         >
-<p className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-bold mt-10 sm:mt-20 md:mt-32">
-        Spice up your palate, <br /> Los Cabos awaits!
-      </p>
-      <div className="mt-4 sm:mt-8">
-        <Image src="/img/underline-img.png" width={200} height={30} />
-      </div>
+          <p className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-bold mt-10 sm:mt-20 md:mt-32">
+            Spice up your palate, <br /> Los Cabos awaits!
+          </p>
+          <div className="mt-4 sm:mt-8">
+            <Image src="/img/underline-img.png" width={200} height={30} />
+          </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
@@ -69,4 +69,4 @@ export default function MySwiperComponent()  {
       </SwiperSlide>
     </Swiper>
   );
-};
+}
