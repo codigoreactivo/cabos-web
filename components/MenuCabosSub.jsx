@@ -13,8 +13,8 @@ const MenuCabosSub = () => {
           <Link className="my-customclass-hover" href="https://drive.google.com/file/d/1JuL-norf8_Pstu5dUWf4CE4wrUumxQtY/view?usp=sharing" target="_blank">Lunch</Link>
         </div>
       </div>
-      <div>
-        <p className="text-[#525252] text-2xl sm:text-3xl font-[CreatoDisplay-Thin] text-center py-6 sm:py-12">
+      <div className="flex md:w-[40%] w-3/4">
+        <p className="text-[#525252] text-2xl sm:text-2xl font-[CreatoDisplay-Light] text-center py-6 sm:py-12">
           From savory appetizers to mouthwatering mains, each dish is a harmonious blend of spices, traditional recipes, and passion
         </p>
       </div>

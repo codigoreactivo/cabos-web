@@ -69,6 +69,7 @@ const Navbar = () => {
           }
         >
           <ul className='font-[CreatoDisplay-Light]'>
+          <Image className='absolute top-10'  src="/img/cabos-logo.png" width={150} height={20}></Image>
             <li onClick={handleNav} className='p-4 text-4xl text-black hover:text-gray-500'>
               <Link href='/'>Home</Link>
             </li>

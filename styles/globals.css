@@ -60,15 +60,15 @@
 .swiper-button-next {
   color: aliceblue !important;
   font-weight: 900;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
 }
 .swiper-pagination-bullet-active{
     background-color: aliceblue !important;
   }
 .swiper-pagination-bullet{
-  width: 40px !important;
-  height: 15px !important;
+  width: 2rem !important;
+  height: 1-px !important;
   border: 3px solid #fff;
   border-radius: 3px !important;
 }
@@ -81,23 +81,6 @@
 
 
 
-.my-customclass-hover:hover::after{
-  width: 46px;
-  height:46px;
-  content: " ";
-  position:absolute;
-  top:30px;
-  left:30px;
-  background-image: url("https://images.pexels.com/photos/17200681/pexels-photo-17200681/free-photo-of-ligero-ciudad-paisaje-puesta-de-sol.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-
-}
-.my-customclass-hover::after{
-  width: 46px;
-  height:46px;
-  content: " sdsd ";
-  position:absolute;
-  top:30px;
-  left:60px;
-  background-image: url("https://images.pexels.com/photos/17230281/pexels-photo-17230281/free-photo-of-blanco-y-negro-ciudad-carretera-hombre.jpeg");
-
+.my-customclass-hover:hover{
+  color: #1e1e1e;
 }

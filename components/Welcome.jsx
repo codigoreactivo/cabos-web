@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Aos from "aos";
 import Link from "next/link";
 
 const Welcome = () => {
@@ -13,7 +14,7 @@ const Welcome = () => {
             width={100}
             height={20}
           />
-          <h2 className="text-5xl sm:text-9xl font-[CreatoDisplay-Black]">
+          <h2 className="text-6xl py-8 sm:text-9xl font-[CreatoDisplay-Black]">
             <span className="text-[#525252]">
               {" "}
               Welcome <br /> to the vibrant{" "}
@@ -26,7 +27,7 @@ const Welcome = () => {
               <br /> cuisine!
             </span>
           </h2>
-          <p className="text-lg sm:text-2xl text-[#525252] font-[CreatoDisplay-Light]">
+          <p className="text-md sm:text-2xl text-[#525252] font-[CreatoDisplay-Light]">
             At Los Cabos Mexican Restaurant, we proudly showcase the <br /> rich
             and diverse culinary traditions of Mexico, where every dish <br />{" "}
             is crafted with passion and an irresistible blend of spices.
@@ -40,15 +41,15 @@ const Welcome = () => {
 
       <div className="flex basis-2/5 h-auto">
         {" "}
-        <div className="text-left sm:text-left justify-center items-start ">
-          <p className="text-2xl sm:text-4xl font-[CreatoDisplay-ExtraBold] text-[#525252] uppercase">
+        <div className="text-left sm:text-left justify-center items-start sm:p-0 pt-[3rem] ">
+          <p className="text-3xl sm:text-4xl font-[CreatoDisplay-ExtraBold] text-[#525252] uppercase">
             Located in Dickinson,
             <br /> North Dakota
           </p>
-          <h3 className="text-lg sm:text-2xl font-[CreatoDisplay-Bold] text-[#525252]">
+          <h3 className="text-xl sm:text-2xl font-[CreatoDisplay-Bold] text-[#525252]">
             We are open 7 days a week
           </h3>
-          <h4 className="text-lg sm:text-2xl font-[CreatoDisplay-Bold] text-[#525252]">
+          <h4 className="text-xl sm:text-2xl font-[CreatoDisplay-Bold] text-[#525252]">
             hours of operation:
           </h4>
           <div className="my-4">
@@ -68,7 +69,7 @@ const Welcome = () => {
             </p>
           </div>
           <div>
-            <p className="text-4xl sm:text-6xl mt-8">
+            <p className="text-6xl sm:text-6xl mt-8">
               <span className="font-[MilestoneFreeVersion-Script] text-[#F71F20]">
                 H
               </span>
@@ -85,7 +86,7 @@ const Welcome = () => {
                 y
               </span>
             </p>
-            <p className="font-[CreatoDisplay-Black] text-4xl sm:text-6xl text-[#525252]">
+            <p className="font-[CreatoDisplay-Black] text-6xl sm:text-6xl text-[#525252]">
               HOUR
             </p>
             <div className="my-4">
