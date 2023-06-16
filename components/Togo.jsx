@@ -20,7 +20,7 @@ const Togo = () => {
         <h2 className="text-[#525252] text-[5.5rem] font-[CreatoDisplay-BlackItalic]">
           TOGO
         </h2>
-        <p className="text-[#FF9138] font-[MilestoneFreeVersion-Script] text-[7rem] mt-[-8rem]">
+        <p className="text-[#FF9138] font-[MilestoneFreeVersion-Script] text-[4rem] sm:text-[7rem] mt-[-5rem] sm:mt-[-8rem]">
           Part <span className="text-[#FC1A85]">Samplers</span>
         </p>
         <div className="flex flex-row text-[#525252] my-12">

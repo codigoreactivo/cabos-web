@@ -15,7 +15,8 @@ export default function Home() {
     <div>
       <NavBar />
 
-      <main>
+      <main className="h-fit
+      ">
         <section
           id="home"
           className="text-black h-screen bg-[#ffffff]  text-center flex justify-center items-center basis-full"
@@ -49,21 +50,22 @@ export default function Home() {
           <Togo />
         </section>
         <section className=" text-white bg-[#FC1A85] h-[30vh] flex basis-full"></section>
-        <section id="gallery" className="h-[100vh]">
+        <section id="gallery" className="h-auto">
           <GridSection />
         </section>
       </main>
 
-      <footer>
+      <footer className="h-auto">
         <Footer />
-      </footer>
-      <div className="bg-[#FF9138] text-[#ffffff] text-center text-base p-2 font-[CreatoDisplay-Thin] basis-full">
+        <div className="bg-[#FF9138] text-[#ffffff] text-center text-base p-2 font-[CreatoDisplay-Thin] basis-full">
         Site by art{" "}
         <a href="#" className="font-[CreatoDisplay-Medium]">
           Creativos Asociados
         </a>{" "}
         | D'MNT
       </div>
+      </footer>
+      
     </div>
   );
 }

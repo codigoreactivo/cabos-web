@@ -10,7 +10,7 @@ const MenuCabosSub = () => {
           <Link href="https://drive.google.com/file/d/1_K97f8I05xDTerZDxInbJxg8d6tQ_eL2/view?usp=sharing" target="_blank">Dinner</Link>
         </div>
         <div className="text-center text-8xl sm:text-9xl font-black text-[#525252]">
-          <Link href="https://drive.google.com/file/d/1JuL-norf8_Pstu5dUWf4CE4wrUumxQtY/view?usp=sharing" target="_blank">Lunch</Link>
+          <Link className="my-customclass-hover" href="https://drive.google.com/file/d/1JuL-norf8_Pstu5dUWf4CE4wrUumxQtY/view?usp=sharing" target="_blank">Lunch</Link>
         </div>
       </div>
       <div>

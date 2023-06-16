@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col lg:flex-row justify-center items-center basis-full bg-[#FF9138] h-[auto] lg:h-auto gap-6 lg:gap-32 mt-[-6rem] py-10">
+    <div className="flex flex-col lg:flex-row justify-center items-center basis-full bg-[#FF9138] h-[auto] lg:h-auto gap-6 lg:gap-32  py-10">
       <div className="flex flex-col text-white justify-center items-center">
         <Image src="/img/geo.png" width={50} height={50}></Image>
         <p className="font-[CreatoDisplay-Thin] mt-4">43 Pelham Road Salem, NH</p>

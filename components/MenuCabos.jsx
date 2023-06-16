@@ -12,18 +12,18 @@ const MenuCabos = () => {
             height: "auto",
           }}
         >
-          <Link href="#" className="text-3xl lg:text-8xl">
+          <Link href="#" className="text-6xl lg:text-8xl">
             Fresh
           </Link>
         </div>
         <div
-          className="flex-1 bg-no-repeat bg-cover flex items-center justify-center "
+          className="flex-1  bg-no-repeat bg-cover flex items-center justify-center "
           style={{
             backgroundImage: "url('img/menucabos-2.jpg')",
             height: "auto",
           }}
         >
-          <Link href="#" className="text-3xl lg:text-8xl">
+          <Link href="#" className="text-6xl lg:text-8xl ">
             Traditional
           </Link>
         </div>
@@ -34,7 +34,7 @@ const MenuCabos = () => {
             height: "auto",
           }}
         >
-          <Link href="#" className="text-3xl lg:text-8xl">
+          <Link href="#" className="text-6xl lg:text-8xl">
             Tasty
           </Link>
         </div>

@@ -14,7 +14,7 @@ const Cantina = () => {
           up your favorite drinks! ¡Viva la buena vida!
         </p>
         <p className="font-[CreatoDisplay-Black] text-left sm:text-center text-[3.5rem] sm:text-9xl justify-center">Cocktails</p>
-        <Image className="mr-[12rem]" src="/img/underline-img.png" width={120} height={30}></Image>
+        <Image className="md:mr-[14rem] mr-0" src="/img/underline-img.png" width={120} height={30}></Image>
       </div>
       <div className="md:basis-3/6 basis-3/6 p-4">
         {/* Contenido de la segunda columna */}
