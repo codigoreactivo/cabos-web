@@ -4,7 +4,7 @@ import Link from "next/link";
 const MenuCabos = () => {
   return (
     <div className="h-screen flex flex-col">
-      <div className="flex flex-row h-full font-[MilestoneFreeVersion-Script] ">
+      <div className="flex flex-col lg:flex-row h-full font-[MilestoneFreeVersion-Script] ">
         <div
           className="flex-1 bg-no-repeat bg-cover flex items-center justify-center"
           style={{
@@ -12,7 +12,9 @@ const MenuCabos = () => {
             height: "auto",
           }}
         >
-          <a href="#"><p className="text-3xl lg:text-8xl">Fresh</p></a>
+          <Link href="#" className="text-3xl lg:text-8xl">
+            Fresh
+          </Link>
         </div>
         <div
           className="flex-1 bg-no-repeat bg-cover flex items-center justify-center "
@@ -21,7 +23,9 @@ const MenuCabos = () => {
             height: "auto",
           }}
         >
-          <a href="#"><p className="text-3xl lg:text-8xl">Traditional</p></a>
+          <Link href="#" className="text-3xl lg:text-8xl">
+            Traditional
+          </Link>
         </div>
         <div
           className="flex-1 flex bg-no-repeat bg-cover items-center justify-center"
@@ -30,9 +34,9 @@ const MenuCabos = () => {
             height: "auto",
           }}
         >
-          <a href="#">
-            <p className="text-3xl lg:text-8xl">Tasty</p>
-          </a>
+          <Link href="#" className="text-3xl lg:text-8xl">
+            Tasty
+          </Link>
         </div>
       </div>
     </div>
