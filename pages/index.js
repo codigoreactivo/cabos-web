@@ -26,7 +26,7 @@ export default function Home() {
         </section>
         <section
           id="home"
-          className="text-black h-auto bg-[#ffffff]  text-center flex justify-center items-center basis-full"
+          className="text-black h-screen bg-[#ffffff]  text-center flex justify-center items-center basis-full"
         >
           <Welcome />
         </section>

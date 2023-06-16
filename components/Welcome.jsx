@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Aos from "aos";
+import 'aos/dist/aos.css'
 import Link from "next/link";
 
 const Welcome = () => {
@@ -14,7 +15,7 @@ const Welcome = () => {
             width={100}
             height={20}
           />
-          <h2 className="text-6xl py-8 sm:text-9xl font-[CreatoDisplay-Black]">
+          <h2 className="text-6xl pb-8 sm:text-9xl font-[CreatoDisplay-Black]">
             <span className="text-[#525252]">
               {" "}
               Welcome <br /> to the vibrant{" "}
