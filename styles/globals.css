@@ -82,11 +82,4 @@
 
 
 
-.my-customclass-hover:hover::after{
-  color: #1e1e1e;
-  transition: .5s ease-out;
-  content: 'hh';
-  position: absolute;
-  bottom: 10px;
-  background-image: url('/img/underline-img');
-}
+
