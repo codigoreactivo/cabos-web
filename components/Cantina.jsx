@@ -13,7 +13,7 @@ const Cantina = () => {
           heart of Mexico. Our friendly and skilled bartenders are here to shake
           up your favorite drinks! ¡Viva la buena vida!
         </p>
-        <p className="font-[CreatoDisplay-Black] text-left sm:text-center text-[3.5rem] sm:text-9xl justify-center">Cocktails</p>
+        <p className="font-[CreatoDisplay-Black] text-left sm:text-center text-[3.5rem] sm:text-9xl justify-center ">Cocktails</p>
         <Image className="md:mr-[14rem] mr-0" src="/img/underline-img.png" width={120} height={30}></Image>
       </div>
       <div className="md:basis-3/6 basis-3/6 p-4">

@@ -6,7 +6,9 @@ import MenuCabosSub from "../components/MenuCabosSub";
 import Cantina from "../components/Cantina";
 import PartySamplers from "../components/PartySamplers";
 import GridSection from "../components/GridSection";
+import HappyHour from "../components/HappyHour";
 import Welcome from "../components/Welcome";
+import { Link } from "react-scroll";
 import Image from "next/image";
 import React from "react";
 
@@ -22,6 +24,12 @@ export default function Home() {
           className="text-black h-screen bg-[#ffffff]  text-center flex justify-center items-center basis-full"
         >
           <SliderTop />
+        </section>
+        <section
+          id="home"
+          className="text-black h-fit md:h-screen bg-[#ffffff] lg:text-left text-center flex justify-center items-center basis-full p-12"
+        >
+          <HappyHour />
         </section>
         <section
           id="home"

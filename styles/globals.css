@@ -44,6 +44,7 @@
 }
 * {
   scroll-behavior: smooth !important;
+  list-style: none;
 }
 .snapwidget-widget {
   aspect-ratio: 16/9;
@@ -63,23 +64,61 @@
   margin-left: 0.5vw;
   margin-right: 0.5vw;
 }
-.swiper-pagination-bullet-active{
-    background-color: aliceblue !important;
-  }
-.swiper-pagination-bullet{
+.swiper-pagination-bullet-active {
+  background-color: aliceblue !important;
+}
+.swiper-pagination-bullet {
   width: 2rem !important;
   height: 1-px !important;
   border: 3px solid #fff;
   border-radius: 3px !important;
 }
-.swiper-pagination{
+.swiper-pagination {
   margin-bottom: 2.5rem;
 }
-.menu-black-text{
+.menu-black-text {
   color: black;
-  ;
 }
 
+.czm-text-sh {
+  text-shadow: 10px -12px 15px black;
+}
 
-
-
+.link-hov-effect {
+  background-position: bottom;
+  opacity: 95%;
+  background-position-x: 100%;
+  transition: .8s ease-in-out;
+}
+.link-hov-effect:hover{
+  background-image: url("/img/underline-img.png");
+  background-position: bottom;
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+  opacity: 85%;
+  z-index: 9;
+}
+.nav-hov-effect {
+  opacity: 95%;
+  background-position-y: 95%;
+  transition: .1s ease-in-out;
+  padding-bottom: 10px;
+}
+.nav-hov-effect:hover{
+  background-image: url("/img/underline-img.png");
+  background-position: bottom;
+  background-position-y: 80%;
+  background-repeat: no-repeat;
+  opacity: 85%;
+  z-index: 9;
+  background-size: contain;
+}
+.nav-hov-effect:focus{
+  background-image: url("/img/underline-img.png");
+  background-position: bottom;
+  background-position-y: 80%;
+  background-repeat: no-repeat;
+  opacity: 85%;
+  z-index: 9;
+  background-size: contain;
+}
