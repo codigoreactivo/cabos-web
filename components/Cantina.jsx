@@ -6,7 +6,7 @@ const Cantina = () => {
     <div className="flex flex-col-reverse md:flex-row basis-full justify-end">
       <div className=" flex flex-col md:basis-3/6 basis-3/6 p-4 justify-end items-end pb-20">
         {/* Contenido de la primera columna */}
-        <p className="font-[CreatoDisplay-Light] text-[1.5rem] text-justify pl-0 sm:pl-[7rem] ">
+        <p className="font-[CreatoDisplay-Light] text-[1.2rem] sm:text-[1.5rem] text-justify pr-[4rem] pl-[1.5rem] sm:pl-[7rem] sm:pr-[4rem] ">
           Step into the vibrant world of our Mexican cantina, where flavors
           dance, and fiesta comes to life. Sip on refreshing margaritas, sample
           an array of tequilas, and let the lively music transport you to the

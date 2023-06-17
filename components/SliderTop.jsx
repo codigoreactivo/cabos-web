@@ -30,12 +30,12 @@ export default function MySwiperComponent() {
     >
       <SwiperSlide>
         <div
-          className="flex flex-col justify-center items-center h-screen bg-no-repeat bg-cover "
+          className="flex flex-col justify-center items-center h-screen bg-no-repeat bg-cover bg-center "
           style={{
             backgroundImage: "url('img/slide-11.jpg')",
           }}
         >
-          <p className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-bold mt-10 sm:mt-20 md:mt-32">
+          <p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-bold mt-24 sm:mt-20 md:mt-32">
             Spice up your palate, <br /> Los Cabos awaits!
           </p>
           <div className="mt-4 sm:mt-8">
@@ -45,7 +45,7 @@ export default function MySwiperComponent() {
       </SwiperSlide>
       <SwiperSlide>
         <div
-          className="h-screen bg-no-repeat bg-cover"
+          className="h-screen bg-no-repeat bg-cover bg-left "
           style={{
             backgroundImage: "url('img/slide-12.jpg')",
           }}
@@ -53,7 +53,7 @@ export default function MySwiperComponent() {
       </SwiperSlide>
       <SwiperSlide>
         <div
-          className="h-screen bg-no-repeat bg-cover"
+          className="h-screen bg-no-repeat bg-cover bg-center"
           style={{
             backgroundImage: "url('img/slide-13.jpg')",
           }}
@@ -61,7 +61,7 @@ export default function MySwiperComponent() {
       </SwiperSlide>
       <SwiperSlide>
         <div
-          className="h-screen bg-no-repeat bg-cover"
+          className="h-screen bg-no-repeat bg-cover bg-center"
           style={{
             backgroundImage: "url('img/slide-14.jpg')",
           }}

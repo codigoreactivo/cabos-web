@@ -4,7 +4,7 @@ import Image from "next/image";
 const GridSection = () => {
   return (
     <div>
-      <div className="bg-white">
+      <div className="bg-white" >
       <Image
         className=" mt-[-10] bottom-0 z-10 align-middle mx-auto "
         src="/img/border-img.png"

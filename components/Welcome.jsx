@@ -1,37 +1,43 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
-import Aos from "aos";
-import 'aos/dist/aos.css'
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Link from "next/link";
 
 const Welcome = () => {
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  });
   return (
-    <div className="h-fit basis-11/12 flex flex-col md:flex-row">
-      <div className="flex basis-3/5 h-auto">
-        <div className="text-left sm:text-left justify-start items-start">
+    <div className="h-auto basis-11/12 flex flex-col md:flex-row gap-10">
+      <div className="flex basis-3/5 h-fit">
+        <div
+          className="text-left sm:text-left justify-start items-start"
+          data-aos="fade-up"
+        >
           <Image
             className="absolute -translate-x-2 -translate-y-2 sm:absolute sm:translate-x-0 sm:translate-y-0"
             src="/img/patron-color.png"
             width={100}
             height={20}
           />
-          <h2 className="text-6xl pb-8 sm:text-9xl font-[CreatoDisplay-Black]">
+          <h2 className="text-6xl pb-8 sm:text-9xl font-[CreatoDisplay-Black] w-[clamp]">
             <span className="text-[#525252]">
               {" "}
-              Welcome <br /> to the vibrant{" "}
+              Welcome <br /> to the vibrant
             </span>{" "}
             <span className="text-[#FD943B]">
               {" "}
-              <br /> world of our{" "}
-            </span>{" "}
+              <br /> world of our
+            </span>
             <span className="text-[#FC1A85]">
               <br /> cuisine!
             </span>
           </h2>
-          <p className="text-md sm:text-2xl text-[#525252] font-[CreatoDisplay-Light]">
-            At Los Cabos Mexican Restaurant, we proudly showcase the <br /> rich
-            and diverse culinary traditions of Mexico, where every dish <br />{" "}
-            is crafted with passion and an irresistible blend of spices.
+          <p className="text-md sm:text-2xl text-[#525252] font-[CreatoDisplay-Light] w-[clamp]">
+            At Los Cabos Mexican Restaurant, we proudly showcase the rich and
+            diverse culinary traditions of Mexico, where every dish is crafted
+            with passion and an irresistible blend of spices.
           </p>
           <p className="text-lg sm:text-2xl text-[#525252] font-[CreatoDisplay-ThinItalic] my-4">
             We love what we do!
@@ -40,7 +46,7 @@ const Welcome = () => {
         </div>
       </div>
 
-      <div className="flex basis-2/5 h-auto">
+      <div className="flex basis-2/5 h-auto " data-aos="fade-down">
         {" "}
         <div className="text-left sm:text-left justify-center items-start sm:p-0 pt-[3rem] ">
           <p className="text-3xl sm:text-4xl font-[CreatoDisplay-ExtraBold] text-[#525252] uppercase">

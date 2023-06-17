@@ -1,11 +1,10 @@
 import NavBar from "../components/NavBar";
 import SliderTop from "../components/SliderTop";
 import Footer from "../components/Footer";
-import HeroSection from "../components/HeroSection";
 import MenuCabos from "../components/MenuCabos";
 import MenuCabosSub from "../components/MenuCabosSub";
 import Cantina from "../components/Cantina";
-import Togo from "../components/Togo";
+import PartySamplers from "../components/PartySamplers";
 import GridSection from "../components/GridSection";
 import Welcome from "../components/Welcome";
 import Image from "next/image";
@@ -26,14 +25,14 @@ export default function Home() {
         </section>
         <section
           id="home"
-          className="text-black h-screen bg-[#ffffff]  text-center flex justify-center items-center basis-full"
+          className="text-black h-auto md:h-screen bg-[#ffffff]  text-center flex justify-center items-center basis-full"
         >
           <Welcome />
         </section>
 
     
         <section
-          id="menu"
+          
           className=" text-white h-auto flex flex-col basis-full"
         >
           <MenuCabos />
@@ -41,7 +40,7 @@ export default function Home() {
         </section>
         <section
           id="cantina"
-          className="text-white h-screen bg-black bg-no-repeat bg-cover  text-center basis-full flex"
+          className="text-white h-screen bg-black bg-no-repeat bg-cover  text-center basis-full flex bg-center"
           style={{
             backgroundImage: "url('img/cantina.jpg')",
           }}
@@ -49,7 +48,7 @@ export default function Home() {
           <Cantina />
         </section>
         <section id="togo" className=" text-white h-screen flex basis-full">
-          <Togo />
+          <PartySamplers />
         </section>
         <section className=" text-white bg-[#FC1A85] h-[30vh] flex basis-full"></section>
         <section id="gallery" className="h-auto">
