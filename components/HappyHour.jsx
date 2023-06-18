@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const HappyHour = () => {
+  useEffect(()=>{
+    AOS.init({duration:3000});
+  },[])
   return (
     <div className="grid h-auto lg:h-screen lg:grid-cols-[60%_minmax(0,_1fr)] w-full xl:w-[80%] 2xl:w-[88%] lg:gap-[8rem] gap-14 lg:text-left lg:justify-items-center content-center ">
-      <div className="grid h-fit lg:justify-items-start justify-items-center lg:py-0 py-20">
+      <div data-aos='zoom-in' className="grid h-fit lg:justify-items-start justify-items-center lg:py-0 py-20">
         <h2 className="text-6xl leading-none md:text-7xl lg:text-8xl xl:text-8xl 2xl:text-9xl font-[CreatoDisplay-Black]">
           
           <span className="text-[#525252]">
@@ -32,7 +35,7 @@ const HappyHour = () => {
         </p>
         <Image src="/img/underline-img.png" width={100} height={20} />
       </div>
-      <div className="grid h-screen content-center lg:h-fit text-[#525252]">
+      <div data-aos='zoom-in'  className="grid h-screen content-center lg:h-fit text-[#525252]">
         <h2 className="text-[1.8rem] lg:text-[2rem] leading-none font-[CreatoDisplay-Black] uppercase text-[#525252]">
           Located in Dickinson,
           <br /> North Dakota

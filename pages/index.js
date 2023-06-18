@@ -2,12 +2,10 @@ import NavBar from "../components/NavBar";
 import SliderTop from "../components/SliderTop";
 import Footer from "../components/Footer";
 import MenuCabos from "../components/MenuCabos";
-import MenuCabosSub from "../components/MenuCabosSub";
 import Cantina from "../components/Cantina";
 import Togo from "../components/Togo";
 import GridSection from "../components/GridSection";
 import HappyHour from "../components/HappyHour";
-
 import { Link } from "react-scroll";
 import Image from "next/image";
 import React from "react";

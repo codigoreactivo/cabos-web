@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const DinnerLunch = () => {
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  }, []);
   return (
-    <div className="grid h-screen w-full lg:w-[80%] xl:w-[68%] lg:h-[65vh] lg:grid-cols-2 text-[#525252] lg:content-center content-evenly text-center">
+    <div data-aos='zoom-in'  className="grid h-screen w-full lg:w-[80%] xl:w-[68%] lg:h-[65vh] lg:grid-cols-2 text-[#525252] lg:content-center content-evenly text-center">
       <div className="grid h-fit font-[CreatoDisplay-Black] text-8xl lg:text-9xl">
         <Link
           className="link-hov-effect"
