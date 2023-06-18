@@ -27,7 +27,7 @@ export default function Home() {
         </section>
         <section
           id="home"
-          className="text-black h-fit md:h-screen bg-[#ffffff] lg:text-left text-center flex justify-center items-center basis-full p-12"
+          className="text-black h-fit md:h-screen bg-[#ffffff] lg:text-left text-center flex justify-center items-center basis-full lg:p-12 p-[1.8rem]"
         >
           <HappyHour />
         </section>
