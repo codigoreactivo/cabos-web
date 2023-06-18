@@ -6,15 +6,10 @@ import "aos/dist/aos.css";
 
 const HappyHour = () => {
   return (
-    <div className="grid h-auto lg:grid-cols-[60%_minmax(0,_1fr)] w-full xl:w-[80%] 2xl:w-[88%] lg:gap-[8rem] gap-14 lg:text-left ">
-      <div className="grid h-fit lg:justify-items-start justify-items-center">
+    <div className="grid h-auto lg:h-screen lg:grid-cols-[60%_minmax(0,_1fr)] w-full xl:w-[80%] 2xl:w-[88%] lg:gap-[8rem] gap-14 lg:text-left lg:justify-items-center content-center ">
+      <div className="grid h-fit lg:justify-items-start justify-items-center lg:py-0 py-20">
         <h2 className="text-6xl leading-none md:text-7xl lg:text-8xl xl:text-8xl 2xl:text-9xl font-[CreatoDisplay-Black]">
-          <Image
-            className="absolute -translate-x-4 -translate-y-2 sm:absolute sm:translate-x-0 sm:translate-y-0"
-            src="/img/patron-color.png"
-            width={100}
-            height={20}
-          />
+          
           <span className="text-[#525252]">
             Welcome <br /> to the vibrant
           </span>
@@ -37,7 +32,7 @@ const HappyHour = () => {
         </p>
         <Image src="/img/underline-img.png" width={100} height={20} />
       </div>
-      <div className="grid h-fit text-[#525252]">
+      <div className="grid h-screen content-center lg:h-fit text-[#525252]">
         <h2 className="text-[1.8rem] lg:text-[2rem] leading-none font-[CreatoDisplay-Black] uppercase text-[#525252]">
           Located in Dickinson,
           <br /> North Dakota
@@ -45,13 +40,13 @@ const HappyHour = () => {
         <h3 className="text-[1.4rem] lg:text-[1.75rem] font-[CreatoDisplay-Bold] leading-none">
           We are open 7 days a week <br /> hours of operation:
         </h3>
-        <ul className="text-[1.4rem] py-6 lg:py-12 leading-none">
+        <ul className="text-[1.4rem] py-12 lg:py-12 leading-none">
           <li className="lg:text-[1.75rem] font-[CreatoDisplay-Light]">10:30am- 9:15pm</li>
           <li className=" lg:text-[1.75rem] font-[CreatoDisplay-Medium]">
             Monday-Thursday
           </li>
         </ul>
-        <ul className="text-[1.4rem] lg:py-2 leading-none">
+        <ul className="text-[1.4rem] py-[2rem] lg:py-2 leading-none">
         <li className="lg:text-[1.75rem] font-[CreatoDisplay-Light]">10:30am- 9:30pm</li>
           <li className="lg:text-[1.75rem] font-[CreatoDisplay-Medium]">
             Friday and Saturday
@@ -59,7 +54,7 @@ const HappyHour = () => {
         </ul>
 
         <div>
-          <p className="text-6xl lg:text-7xl mt-8">
+          <p className="text-7xl lg:text-7xl lg:mt-8">
             <span className="font-[MilestoneFreeVersion-Script] text-[#F71F20]">
               H
             </span>
@@ -76,10 +71,10 @@ const HappyHour = () => {
               y
             </span>
           </p>
-          <p className="font-[CreatoDisplay-Black] text-6xl lg:text-7xl text-[#525252]">
+          <p className="font-[CreatoDisplay-Black] text-7xl lg:text-7xl text-[#525252]">
             HOUR
           </p>
-          <ul className="leading-none py-6 lg:py-0 text-[1.4rem]">
+          <ul className="leading-none py-[2rem] lg:py-0 text-[1.4rem]">
             <li className=" lg:text-[1.75rem] font-[CreatoDisplay-Light]">10:30am- 5:00pm</li>
             <li className="lg:text-[1.75rem] font-[CreatoDisplay-Medium]">Monday-Friday</li>
           </ul>

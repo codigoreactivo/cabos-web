@@ -14,7 +14,7 @@ const MenuCabosSub = () => {
         </div>
       </div>
       <div className="flex md:w-[40%] w-[70%]">
-        <p className="text-[#525252] txt-align-lts text-2xl sm:text-2xl font-[CreatoDisplay-Light] w-[clamp] py-6 sm:py-12">
+        <p className="text-[#525252]  text-2xl sm:text-2xl font-[CreatoDisplay-Light] w-[clamp] py-6 sm:py-12">
           From savory appetizers to mouthwatering mains, each dish is a harmonious blend of spices, traditional recipes, and passion
         </p>
       </div>

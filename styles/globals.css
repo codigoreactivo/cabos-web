@@ -94,21 +94,30 @@
 .czm-text-sh {
   text-shadow: 10px -12px 15px black;
 }
-
+/*SIMPLE BG*/
+.simple-bg-uline{
+  background-position: bottom;
+  background-image: url("/img/underline-img.png");
+  background-repeat: no-repeat;
+  padding-bottom: 25px;
+}
+/*BG EFFECT Links Generales*/
 .link-hov-effect {
   background-position: bottom;
   opacity: 95%;
-  background-position-x: 100%;
-  transition: .8s ease-in-out;
+  background-position-y: 95%;
+  transition: .4s ease-in-out;
+  padding-bottom: 45px;
 }
 .link-hov-effect:hover{
   background-image: url("/img/underline-img.png");
   background-position: bottom;
-  background-position-x: 50%;
+  background-position-y: 80%;
   background-repeat: no-repeat;
   opacity: 85%;
   z-index: 9;
 }
+/*NAVEGACION HOVER*/
 .nav-hov-effect {
   opacity: 95%;
   background-position-y: 95%;
@@ -142,4 +151,8 @@
   .txt-align-lts{
     text-align-last: left;
   }
+}
+
+.txt-align-lts-center{
+  text-align-last: center;
 }

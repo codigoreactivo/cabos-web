@@ -32,7 +32,7 @@ const Togo = () => {
               </p>
             </Link>
           </div>
-          <p className="font-[CreatoDisplay-Regular] text-[#525252] max-w-[68%] text-justify txt-align-lts text-xl lg:text-2xl lg:pt-4">
+          <p className="font-[CreatoDisplay-Regular] text-[#525252] max-w-[68%] text-justify txt-align-lts-center text-xl lg:text-2xl lg:pt-4">
             The ultimate solution for hassle-free and delicious gatherings on
             the go! Whether you're hosting a casual get-together, a corporate
             event, or any special occasion, our Togo Party Platters are designed

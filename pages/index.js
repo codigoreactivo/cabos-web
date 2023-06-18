@@ -4,7 +4,6 @@ import Footer from "../components/Footer";
 import MenuCabos from "../components/MenuCabos";
 import MenuCabosSub from "../components/MenuCabosSub";
 import Cantina from "../components/Cantina";
-import PartySamplers from "../components/PartySamplers";
 import Togo from "../components/Togo";
 import GridSection from "../components/GridSection";
 import HappyHour from "../components/HappyHour";
@@ -12,6 +11,7 @@ import HappyHour from "../components/HappyHour";
 import { Link } from "react-scroll";
 import Image from "next/image";
 import React from "react";
+import DinnerLunch from "../components/DinnerLunch";
 
 export default function Home() {
   return (
@@ -27,14 +27,28 @@ export default function Home() {
         </section>
         <section
           id="home"
-          className="text-black h-fit md:h-screen bg-[#ffffff] lg:text-left text-center flex justify-center items-center basis-full lg:p-12 p-[1.8rem]"
+          className="text-black h-fit md:h-fit bg-[#ffffff] lg:text-left text-center relative flex justify-center items-center basis-full lg:p-12 p-[1.8rem]"
         >
+          <Image
+            className="absolute w-[15%] top-4 sm:top-36 sm:left-20 md:top-4 md:left-14 lg:top-36 lg:left-24 lg:w-fit"
+            src="/img/patron-color.png"
+            width={100}
+            height={20}
+          />
           <HappyHour />
         </section>
 
         <section className=" text-white h-auto flex flex-col basis-full">
           <MenuCabos />
-          <MenuCabosSub />
+        </section>
+        <section className=" h-fit relative grid w-full justify-items-center items-center">
+          <Image
+            className="absolute w-[15%] bottom-2 lg:right-24 lg:bottom-24 lg:w-fit"
+            src="/img/patron-color.png"
+            width={120}
+            height={20}
+          />
+          <DinnerLunch />
         </section>
         <section
           id="cantina"

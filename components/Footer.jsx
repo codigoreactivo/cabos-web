@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="flex flex-col text-white justify-center items-center">
         <Image src="/img/geo.png" width={50} height={50}></Image>
         <p className="font-[CreatoDisplay-Thin] mt-4">583 12th Dt W, Dickinson, ND 58601</p>
-        <p className="font-[CreatoDisplay-Black] text-3xl">+1 (701) 483-1841</p>
+        <Link href='tel:+1(701)483-1841'><p className="font-[CreatoDisplay-Black] text-3xl">+1 (701) 483-1841</p></Link>
       </div>
       <div className="flex flex-col text-white justify-center items-center self-center">
         <Image src="/img/logo-white.png" width={280} height={50}></Image>
