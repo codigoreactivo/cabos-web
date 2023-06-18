@@ -138,3 +138,8 @@
 .txt-align-lts{
   text-align-last: center;
 }
+@media (min-width: 1024px){
+  .txt-align-lts{
+    text-align-last: left;
+  }
+}
