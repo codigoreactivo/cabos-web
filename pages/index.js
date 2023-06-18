@@ -39,7 +39,7 @@ export default function Home() {
         <section className=" text-white h-auto flex flex-col basis-full">
           <MenuCabos />
         </section>
-        <section className=" h-fit relative grid w-full justify-items-center items-center">
+        <section id="menu" className=" h-fit relative grid w-full justify-items-center items-center">
           <Image
             className="absolute w-[15%] bottom-2 lg:right-24 lg:bottom-24 lg:w-fit"
             src="/img/patron-color.png"
@@ -70,14 +70,13 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="h-auto">
+      <footer className=" block h-auto">
         <Footer />
         <div className="bg-[#FF9138] text-[#ffffff] text-center text-base p-2 font-[CreatoDisplay-Thin] basis-full">
           Site by art{" "}
-          <a href="#" className="font-[CreatoDisplay-Medium]">
-            Creativos Asociados
-          </a>{" "}
-          | D'MNT
+          <Link href="#" className="font-[CreatoDisplay-Medium]">
+            Creativos Asociados </Link>
+            | D'MNT
         </div>
       </footer>
     </div>

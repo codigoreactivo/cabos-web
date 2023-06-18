@@ -31,7 +31,7 @@ const DinnerLunch = () => {
       <div className="grid lg:col-span-2 font-[CreatoDisplay-Regular] text-[1.4rem] lg:text-[1.8rem] px-[2.2rem] leading-none sm:px-[4rem] md:px-[5rem] lg:px-[10rem] xl:px-[20-rem] 2xl:px-[15rem] lg:mt-[5rem] text-justify txt-align-lts-center">
         <p className="leading-none">
           From savory appetizers to mouthwatering mains, each dish is a
-          harmonious blend of spices, traditional recipes, and passion
+          harmonious blend of spices, traditional recipes, and passion.
         </p>
       </div>
       

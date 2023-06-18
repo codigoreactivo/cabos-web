@@ -9,7 +9,7 @@ const HappyHour = () => {
     AOS.init({duration:3000});
   },[])
   return (
-    <div className="grid h-auto lg:h-screen lg:grid-cols-[60%_minmax(0,_1fr)] w-full xl:w-[80%] 2xl:w-[88%] lg:gap-[8rem] gap-14 lg:text-left lg:justify-items-center content-center ">
+    <div className="grid h-auto lg:h-screen lg:grid-cols-[60%_minmax(0,_1fr)] w-full xl:w-[80%] 2xl:w-[88%] lg:gap-[8rem] xl:gap-[1rem] gap-14 lg:text-left lg:justify-items-center content-center ">
       <div data-aos='zoom-in' className="grid h-fit lg:justify-items-start justify-items-center lg:py-0 py-20">
         <h2 className="text-6xl leading-none md:text-7xl lg:text-8xl xl:text-8xl 2xl:text-9xl font-[CreatoDisplay-Black]">
           
@@ -44,13 +44,13 @@ const HappyHour = () => {
           We are open 7 days a week <br /> hours of operation:
         </h3>
         <ul className="text-[1.4rem] py-12 lg:py-12 leading-none">
-          <li className="lg:text-[1.75rem] font-[CreatoDisplay-Light]">10:30am- 9:15pm</li>
+          <li className="lg:text-[1.75rem] font-[CreatoDisplay-Light]">10:30am - 9:15pm</li>
           <li className=" lg:text-[1.75rem] font-[CreatoDisplay-Medium]">
             Monday-Thursday
           </li>
         </ul>
         <ul className="text-[1.4rem] py-[2rem] lg:py-2 leading-none">
-        <li className="lg:text-[1.75rem] font-[CreatoDisplay-Light]">10:30am- 9:30pm</li>
+        <li className="lg:text-[1.75rem] font-[CreatoDisplay-Light]">10:30am - 9:30pm</li>
           <li className="lg:text-[1.75rem] font-[CreatoDisplay-Medium]">
             Friday and Saturday
           </li>
@@ -78,8 +78,8 @@ const HappyHour = () => {
             HOUR
           </p>
           <ul className="leading-none py-[2rem] lg:py-0 text-[1.4rem]">
-            <li className=" lg:text-[1.75rem] font-[CreatoDisplay-Light]">10:30am- 5:00pm</li>
-            <li className="lg:text-[1.75rem] font-[CreatoDisplay-Medium]">Monday-Friday</li>
+            <li className=" lg:text-[1.75rem] font-[CreatoDisplay-Light]">10:30am - 5:00pm</li>
+            <li className="lg:text-[1.75rem] font-[CreatoDisplay-Medium]">Monday - Friday</li>
           </ul>
         </div>
       </div>
