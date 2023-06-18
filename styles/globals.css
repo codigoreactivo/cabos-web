@@ -31,6 +31,10 @@
   src: url("/fonts/CreatoDisplay-Bold.otf") format("opentype");
 }
 @font-face {
+  font-family: "CreatoDisplay-Regular";
+  src: url("/fonts/CreatoDisplay-Regular.otf") format("opentype");
+}
+@font-face {
   font-family: "CreatoDisplay-ExtraBoldItalic";
   src: url("/fonts/CreatoDisplay-ExtraBoldItalic.otf") format("opentype");
 }
@@ -60,10 +64,17 @@
 .swiper-button-prev,
 .swiper-button-next {
   color: aliceblue !important;
-  font-weight: 900;
+  font-weight: 300;
   margin-left: 0.5vw;
   margin-right: 0.5vw;
 }
+/*@media screen {
+  .swiper-button-prev,
+.swiper-button-next {
+
+}
+}
+*/
 .swiper-pagination-bullet-active {
   background-color: aliceblue !important;
 }
@@ -121,4 +132,9 @@
   opacity: 85%;
   z-index: 9;
   background-size: contain;
+}
+
+/*ALINEAR LA ULTIMA FRASE*/
+.txt-align-lts{
+  text-align-last: center;
 }

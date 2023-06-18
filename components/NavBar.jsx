@@ -65,24 +65,24 @@ const Navbar = () => {
           className={
             nav
               ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-white text-center ease-in duration-300'
-              : 'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'
+              : 'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-[#525252] text-center ease-in duration-300'
           }
         >
           <ul className='font-[CreatoDisplay-Medium]'>
           <Image className='absolute top-10'  src="/img/cabos-logo.png" width={150} height={20}></Image>
-            <li onClick={handleNav} className='p-4 text-4xl text-black hover:text-gray-500'>
+            <li onClick={handleNav} className='p-4 text-4xl text-[#525252] hover:text-gray-500'>
               <Link className='nav-hov-effect' href='/'>Home</Link>
             </li>
-            <li onClick={handleNav} className='p-4 text-4xl text-black hover:text-gray-500'>
+            <li onClick={handleNav} className='p-4 text-4xl text-[#525252] hover:text-gray-500'>
               <Link className='nav-hov-effect' href='#menu'>Menu</Link>
             </li>
-            <li onClick={handleNav} className='p-4 text-4xl text-black hover:text-gray-500'>
+            <li onClick={handleNav} className='p-4 text-4xl text-[#525252] hover:text-gray-500'>
               <Link className='nav-hov-effect' href='#cantina'>Cantina</Link>
             </li>
-            <li onClick={handleNav} className='p-4 text-4xl text-black hover:text-gray-500'>
+            <li onClick={handleNav} className='p-4 text-4xl text-[#525252] hover:text-gray-500'>
               <Link className='nav-hov-effect' href='#togo'>Togo</Link>
             </li>
-            <li onClick={handleNav} className='p-4 text-4xl text-black hover:text-gray-500'>
+            <li onClick={handleNav} className='p-4 text-4xl text-[#525252] hover:text-gray-500'>
               <Link className='nav-hov-effect' href='#gallery'>Gallery</Link>
             </li>
           </ul>

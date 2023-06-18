@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const PartySamplers = () => {
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  });
   return (
     <div className="flex basis-full flex-col md:flex-row sm:flex-row h-auto md:h-auto">
       <div
@@ -28,7 +33,7 @@ const PartySamplers = () => {
           <div className="flex flex-row text-[#525252] my-12">
             <Image src="/img/tel.png" width={30} height={30} />
             <Link href="tel:+1(701)483-1841">
-              <p className="font-[CreatoDisplay-ExtraBoldItalic] text-3xl">
+              <p className="font-[CreatoDisplay-BlackItalic] text-3xl">
                 +1 (701) 483-1841
               </p>
             </Link>
