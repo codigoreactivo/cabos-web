@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const MenuCabos = () => {
   return (
-    <div className="h-auto grid lg:grid-cols-3 w-full text-[6rem] lg:text-[7rem] font-[MilestoneFreeVersion-Script]">
+    <div className="h-auto grid lg:grid-cols-3 w-full text-[5.4rem] lg:text-[7rem] font-[MilestoneFreeVersion-Script]">
       <div
         className="czm-text-sh grid bg-cover bg-no-repeat h-screen items-center justify-center"
         style={{
