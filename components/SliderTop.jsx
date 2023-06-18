@@ -35,7 +35,7 @@ export default function MySwiperComponent() {
             backgroundImage: "url('img/slide-11.jpg')",
           }}
         >
-          <p className=" text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-bold mt-36 sm:mt-20 md:mt-32">
+          <p className=" text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-bold mt-36 sm:mt-20 md:mt-32 font-[CreatoDisplay-Black]">
             Spice up your palate, <br /> Los Cabos awaits!
           </p>
           <div className="mt-4 sm:mt-8">

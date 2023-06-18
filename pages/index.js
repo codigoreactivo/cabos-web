@@ -8,7 +8,7 @@ import PartySamplers from "../components/PartySamplers";
 import Togo from "../components/Togo";
 import GridSection from "../components/GridSection";
 import HappyHour from "../components/HappyHour";
-import Welcome from "../components/Welcome";
+
 import { Link } from "react-scroll";
 import Image from "next/image";
 import React from "react";
