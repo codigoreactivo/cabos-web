@@ -10,8 +10,8 @@ const HappyHour = () => {
   },[])
   return (
     <div className="grid h-auto lg:h-screen lg:grid-cols-[60%_minmax(0,_1fr)] w-full xl:w-[80%] 2xl:w-[88%] lg:gap-[8rem] xl:gap-[1rem] gap-14 lg:text-left lg:justify-items-center content-center ">
-      <div data-aos='zoom-in' className="grid h-fit lg:justify-items-start justify-items-center lg:py-0 py-20">
-        <h2 className="text-6xl leading-none md:text-7xl lg:text-8xl xl:text-8xl 2xl:text-9xl font-[CreatoDisplay-Black]">
+      <div data-aos='zoom-in' className="grid h-fit lg:justify-items-start justify-items-center  lg:py-0 py-20">
+        <h2 className="text-7xl leading-none md:text-7xl lg:text-8xl xl:text-8xl 2xl:text-9xl font-[CreatoDisplay-Black]">
           
           <span className="text-[#525252]">
             Welcome <br /> to the vibrant
@@ -24,7 +24,7 @@ const HappyHour = () => {
           </span>
         </h2>
         <span className="lg:w-[85%]">
-        <p className="w-[clamp] text-[1.35rem] lg:text-[1.75rem] pt-7 lg:pt-0 txt-align-lts  lg:text-left text-justify text-xl leading-none text-[#525252] font-[CreatoDisplay-Light]">
+        <p className="w-[clamp] px-10 md:px-32 lg:px-0 text-[1.35rem] lg:text-[1.75rem] pt-7 lg:pt-0 txt-align-lts  lg:text-left text-justify text-xl leading-none text-[#525252] font-[CreatoDisplay-Light]">
           At Los Cabos Mexican Restaurant, we proudly showcase the rich and
           diverse culinary traditions of Mexico, where every dish is crafted
           with passion and an irresistible blend of spices.

@@ -10,7 +10,7 @@ const DinnerLunch = () => {
   }, []);
   return (
     <div data-aos='zoom-in'  className="grid h-screen w-full lg:w-[80%] xl:w-[68%] lg:h-[65vh] lg:grid-cols-2 text-[#525252] lg:content-center content-evenly text-center">
-      <div className="grid h-fit font-[CreatoDisplay-Black] text-8xl lg:text-9xl">
+      <div className="grid h-fit font-[CreatoDisplay-Black] text-8xl lg:text-8xl xl:text-9xl">
         <Link
           className="link-hov-effect"
           href="https://drive.google.com/file/d/1_K97f8I05xDTerZDxInbJxg8d6tQ_eL2/view?usp=sharing"
@@ -19,7 +19,7 @@ const DinnerLunch = () => {
           Dinner
         </Link>
       </div>
-      <div className="grid h-fit font-[CreatoDisplay-Black] text-8xl lg:text-9xl">
+      <div className="grid h-fit font-[CreatoDisplay-Black] text-8xl lg:text-8xl xl:text-9xl">
         <Link
           className="link-hov-effect"
           href="https://drive.google.com/file/d/1JuL-norf8_Pstu5dUWf4CE4wrUumxQtY/view?usp=sharing"
