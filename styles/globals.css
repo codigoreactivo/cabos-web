@@ -53,7 +53,7 @@
 .snapwidget-widget {
   padding: 2rem;
   overflow: hidden;
-  margin-top: -22rem;
+  margin-top: -12rem;
 }
 @media (min-width: 1024px) {
   .snapwidget-widget {
