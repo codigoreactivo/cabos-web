@@ -24,7 +24,7 @@ const HappyHour = () => {
           </span>
         </h2>
         <span className="lg:w-[85%]">
-        <p className="w-[clamp] px-10 md:px-32 lg:px-0 text-[1.35rem] lg:text-[1.75rem] pt-7 lg:pt-0 txt-align-lts  lg:text-left text-center text-xl leading-none text-[#525252] font-[CreatoDisplay-Light]">
+        <p className="w-[clamp] px-40 md:px-32 lg:px-0 text-[1.35rem] lg:text-[1.75rem] pt-7 lg:pt-0 txt-align-lts  lg:text-left text-justify text-xl leading-none text-[#525252] font-[CreatoDisplay-Light]">
           At Los Cabos Mexican Restaurant, we proudly showcase the rich and
           diverse culinary traditions of Mexico, where every dish is crafted
           with passion and an irresistible blend of spices.
