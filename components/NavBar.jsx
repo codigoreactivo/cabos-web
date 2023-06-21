@@ -45,7 +45,7 @@ const Navbar = () => {
             <Link className='nav-hov-effect' href='/#cantina'>Cantina</Link>
           </li>
           <li className='p-4'>
-            <Link className='nav-hov-effect' href='/#togo'>Togo</Link>
+            <Link className='nav-hov-effect' href='/#togo-d'>Togo</Link>
           </li>
           <li className='p-4 '>
             <Link className='nav-hov-effect'  href='/#gallery'>Gallery</Link>
@@ -74,16 +74,15 @@ const Navbar = () => {
               <Link className='nav-hov-effect' href='/'>Home</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-4xl text-[#525252] hover:text-gray-500'>
-              <Link className='nav-hov-effect' href='#menu'>Menu</Link>
+              <Link className='nav-hov-effect' href='/#menu'>Menu</Link>            </li>
+            <li onClick={handleNav} className='p-4 text-4xl text-[#525252] hover:text-gray-500'>
+              <Link className='nav-hov-effect' href='/#cantina'>Cantina</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-4xl text-[#525252] hover:text-gray-500'>
-              <Link className='nav-hov-effect' href='#cantina'>Cantina</Link>
+              <Link className='nav-hov-effect' href='/#togo-m'>Togo</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-4xl text-[#525252] hover:text-gray-500'>
-              <Link className='nav-hov-effect' href='#togo'>Togo</Link>
-            </li>
-            <li onClick={handleNav} className='p-4 text-4xl text-[#525252] hover:text-gray-500'>
-              <Link className='nav-hov-effect' href='#gallery'>Gallery</Link>
+              <Link className='nav-hov-effect' href='/#gallery'>Gallery</Link>
             </li>
           </ul>
         </div>

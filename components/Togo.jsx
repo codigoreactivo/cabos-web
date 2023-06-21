@@ -17,6 +17,7 @@ const Togo = () => {
         }}
       ></div>
       <div
+        id="togo-m"
         data-aos="zoom-in-down"
         className="grid lg:h-fit h-auto justify-items-center items-center lg:py-0 py-[10rem]"
       >

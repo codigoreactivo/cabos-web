@@ -59,7 +59,7 @@ export default function Home() {
         </section>
 
         <section
-          id="togo"
+          id="togo-d"
           className=" h-auto flex justify-center items-center basis-full"
         >
           <Togo />

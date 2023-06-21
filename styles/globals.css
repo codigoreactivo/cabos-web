@@ -161,3 +161,9 @@
 .txt-align-lts-center{
   text-align-last: center;
 }
+
+/*TEXT INTER WORD*/
+.txt-align-inter-word{
+  text-align: justify;
+  text-justify: inter-word;
+}
