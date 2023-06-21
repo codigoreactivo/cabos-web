@@ -51,12 +51,17 @@
   list-style: none;
 }
 .snapwidget-widget {
-  aspect-ratio: 16/9;
-  padding: 6rem;
+  padding: 2rem;
   overflow: hidden;
   margin-top: -22rem;
 }
-
+@media (min-width: 1024px) {
+  .snapwidget-widget {
+    padding: 6rem;
+    overflow: hidden;
+    margin-top: -22rem;
+  }
+}
 .media-grid .clearfix {
   gap: 2rem;
   margin: 5rem;
