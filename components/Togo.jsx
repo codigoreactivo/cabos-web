@@ -9,17 +9,21 @@ const Togo = () => {
     AOS.init({ duration: 3000 });
   }, []);
   return (
-    <div className="grid h-auto lg:grid-cols-[53%_minmax(0,_1fr)] w-full items-center ">
+    <div className="flex h-auto flex-col-reverse lg:flex-col lg:flex-row lg:basis-[100%] justify-center items-center ">
       <div
-        className="grid h-screen bg-cover bg-center"
+        className="flex flex-col-reverse lg:flex-col basis-[53%] h-screen lg:auto bg-cover bg-center"
         style={{
           backgroundImage: "url('img/togo.jpg')",
         }}
-      ></div>
+      >
+        <div className="lg:hidden"><Image src='/img/togo.jpg'           width={1200}          
+          height={1800}
+        /> </div>
+      </div>
       <div
         id="togo-m"
         data-aos="zoom-in-down"
-        className="grid lg:h-fit h-auto justify-items-center items-center lg:py-0 py-[10rem]"
+        className="flex basis-[47%] flex-col lg:h-fit h-auto justify-items-center items-center lg:py-0 py-[10rem]"
       >
         <Image
           className="absolute -translate-x-[28rem] -translate-y-[-4rem]"
