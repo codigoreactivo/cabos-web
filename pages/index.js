@@ -8,10 +8,27 @@ import GridSection from "../components/GridSection";
 import HappyHour from "../components/HappyHour";
 import { Link } from "react-scroll";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import DinnerLunch from "../components/DinnerLunch";
+import { useRouter } from "next/router";
 
 export default function Home() {
+  const router = useRouter();
+
+  useEffect(() => {
+    const removeHashFragment = () => {
+      const { hash } = window.location;
+
+      // Check if the URL has a hash fragment
+      if (hash) {
+        // Remove the hash fragment from the URL
+        const updatedUrl = window.location.href.replace(hash, "");
+        window.history.replaceState({}, document.title, updatedUrl);
+      }
+    };
+
+    removeHashFragment();
+  }, []);
   return (
     <div>
       <NavBar />
@@ -39,7 +56,10 @@ export default function Home() {
         <section className=" text-white h-auto flex flex-col basis-full">
           <MenuCabos />
         </section>
-        <section id="menu" className=" h-fit relative grid w-full justify-items-center items-center">
+        <section
+          id="menu"
+          className=" h-fit relative grid w-full justify-items-center items-center"
+        >
           <Image
             className="absolute w-[15%] bottom-2 lg:right-24 lg:bottom-24 lg:w-fit"
             src="/img/patron-color.png"
@@ -75,8 +95,9 @@ export default function Home() {
         <div className="bg-[#FF9138] text-[#ffffff] text-center text-base p-2 font-[CreatoDisplay-Thin] basis-full">
           Site by art{" "}
           <Link href="#" className="font-[CreatoDisplay-Medium]">
-            Creativos Asociados </Link>
-            | D'MNT
+            Creativos Asociados{" "}
+          </Link>
+          | D'MNT
         </div>
       </footer>
     </div>

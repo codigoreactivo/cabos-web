@@ -11,14 +11,14 @@ const Togo = () => {
   return (
     <div className="flex h-auto flex-col-reverse  lg:flex-row lg:basis-[100%] justify-center items-center ">
       <div
-        className="flex flex-col-reverse lg:flex-col basis-[53%] h-screen lg:auto bg-cover bg-center"
+        className="flex flex-col-reverse lg:flex-col lg:basis-[53%] w-full h-screen lg:auto bg-cover bg-center"
         style={{
           backgroundImage: "url('img/togo.jpg')",
         }}
       >
-        <div className=" h-screen lg:h-auto w-full bg-center bg-cover" style={{
+        <div className="hidden  h-screen lg:h-auto  bg-center bg-cover" style={{
           backgroundImage: "url('img/togo.jpg')",
-        }}></div>
+        }}>s</div>
       </div>
       <div
         id="togo-m"
