@@ -9,16 +9,16 @@ const Togo = () => {
     AOS.init({ duration: 3000 });
   }, []);
   return (
-    <div className="flex h-auto flex-col-reverse lg:flex-col lg:flex-row lg:basis-[100%] justify-center items-center ">
+    <div className="flex h-auto flex-col-reverse  lg:flex-row lg:basis-[100%] justify-center items-center ">
       <div
         className="flex flex-col-reverse lg:flex-col basis-[53%] h-screen lg:auto bg-cover bg-center"
         style={{
           backgroundImage: "url('img/togo.jpg')",
         }}
       >
-        <div className="lg:hidden"><Image src='/img/togo.jpg'           width={1200}          
-          height={1800}
-        /> </div>
+        <div className=" h-screen lg:h-auto w-full bg-center bg-cover" style={{
+          backgroundImage: "url('img/togo.jpg')",
+        }}></div>
       </div>
       <div
         id="togo-m"
