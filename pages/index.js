@@ -10,25 +10,9 @@ import { Link } from "react-scroll";
 import Image from "next/image";
 import React, { useEffect } from "react";
 import DinnerLunch from "../components/DinnerLunch";
-import { useRouter } from "next/router";
 
 export default function Home() {
-  const router = useRouter();
-
-  useEffect(() => {
-    const removeHashFragment = () => {
-      const { hash } = window.location;
-
-      // Check if the URL has a hash fragment
-      if (hash) {
-        // Remove the hash fragment from the URL
-        const updatedUrl = window.location.href.replace(hash, "");
-        window.history.replaceState({}, document.title, updatedUrl);
-      }
-    };
-
-    removeHashFragment();
-  }, []);
+  
   return (
     <div>
       <NavBar />
